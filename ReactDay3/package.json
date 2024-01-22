@@ -1,0 +1,25 @@
+{
+  "name": "reactday3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shekin-dev/React-Practice.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "shekin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shekin-dev/React-Practice/issues"
+  },
+  "homepage": "https://github.com/Shekin-dev/React-Practice#readme",
+  "dependencies": {
+    "parcel": "^2.11.0"
+  }
+}
