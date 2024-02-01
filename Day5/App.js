@@ -1,49 +1,11 @@
 import React from "react";
 import ReactDOM  from "react-dom/client";
 import resList from "./utilities/Datas";
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img
-          className="logo"
-          src="https://cdn.dribbble.com/users/630677/screenshots/3833541/media/201454f743f48c415a38c49419275692.jpg?resize=400x0"
-        />
-      </div>
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
+import RestaurantCard from "./Src/Restaurantcard";
+import Header from "./Src/Header";
 
-const RestaurantCard = (props) => {
-  const { resData } = props;
-  const { name, cuisines, cloudinaryImageId, costForTwo, sla, avgRating } =
-    resData?.info;
-  return (
-    <div className="res-card">
-      <img
-        className="res-logo"
-        src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`}
-        alt="res-logo"
-      />
-      <h3>{name}</h3>
-      <h4>{cuisines?.join(",")}</h4>
-      <h4>{avgRating}</h4>
-      <h4>{costForTwo}</h4>
-      <h4>{sla?.deliveryTime} mins</h4>
-      {/* <h4>{resData?.info?.avgRating}</h4>
-      <h4>{resData?.info?.costForTwo}</h4>
-      <h4>{resData?.info?.sla?.deliveryTime} mins</h4>{" "} */}
-    </div>
-  );
-};
+
+
 const Body = () => {
   return (
     <div className="body">
