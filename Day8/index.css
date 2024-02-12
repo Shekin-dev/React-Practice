@@ -64,7 +64,14 @@
     margin-top: 0;
     margin-bottom: 0;
 }
-.body{
-    background-image:url('hotel.jpg');
-    background-repeat: no-repeat;
+
+.body {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: lavender;
+}
+
+h4{
+    word-break: break-all;
 }

@@ -1,0 +1,43 @@
+{
+  "name": "reactday3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shekin-dev/React-Practice.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "shekin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shekin-dev/React-Practice/issues"
+  },
+  "homepage": "https://github.com/Shekin-dev/React-Practice#readme",
+  "dependencies": {
+    "@heroicons/react": "^2.1.1",
+    "@material-tailwind/react": "^2.1.8",
+    "http-proxy-middleware": "^2.0.6",
+    "parcel": "^2.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0"
+  },
+  "devDependencies": {
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "https-browserify": "^1.0.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "querystring-es3": "^0.2.1",
+    "url": "^0.11.3",
+    "util": "^0.12.5"
+  }
+}
