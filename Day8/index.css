@@ -75,3 +75,7 @@
 h4{
     word-break: break-all;
 }
+
+.searchbutton{
+    margin-left: 25px;
+}

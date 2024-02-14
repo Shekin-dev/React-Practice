@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import RestaurantCard from "./RestaurantCard";
 import { SWIGGY_URL } from "../Utils/Contants";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
+
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
@@ -47,7 +49,7 @@ const Body = () => {
                 // e is a callback method
                 onChange={(e) => setSearchText(e?.target?.value)}
               />
-              <button
+              <button className="searchbutton"
                 onClick={() => {
                   // filter the cards
                   setFilteredRestaurants(
@@ -75,7 +77,10 @@ const Body = () => {
           </div>
           <div className="res-container">
             {filteredRestaurants.map((resObj) => (
+              <Link to={`/restaurants/${resObj?.info?.id}`}
+              key={resObj?.info?.id}>
               <RestaurantCard resData={resObj} />
+              </Link>
             ))}
           </div>
         </div>
