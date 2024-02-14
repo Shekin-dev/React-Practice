@@ -32,6 +32,7 @@
 .res-container{
     display: flex;
     flex-wrap: wrap;
+    gap:34px;
 }
 
 .res-card{
@@ -76,6 +77,13 @@ h4{
     word-break: break-all;
 }
 
+h1 {
+    margin: 0;
+}
 .searchbutton{
     margin-left: 25px;
 }
+
+::-webkit-scrollbar {
+    display: none;
+  }

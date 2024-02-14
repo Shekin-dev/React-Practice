@@ -28,7 +28,7 @@ const RestaurantsMenu = () => {
       ?.card?.itemCards;
 
   return (
-    <div>
+    <div className="body">
       <h1>{name}</h1>
       <h2>{cuisines}</h2>
       <p>{`${sla?.deliveryTime} mins`}</p>
